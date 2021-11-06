@@ -13,16 +13,19 @@
 </head>
 <body>
     <aside>
-        <img src="{% static 'main/img/ml.jpg'%} " alt="Лого">
+        <img src="{% static 'main/img/2062056.svg'%} " alt="Лого">
         <span class="logo">itProger</span>
         <h3>Навигация</h3>
         <ul>
             <a href="{% url 'home' %}"><li><i class="fas fa-home"></i>Главная</li></a>
             <a href="{% url 'about' %}"><li><i class="fas fa-address-card"></i>Про нас</li></a>
+            <a href="{% url 'about' %}"><li><i class="fas fa-newspaper"></i>Новости</li></a>
             <a href=""><li><i class="fas fa-paper-plane"></i>Контакты</li></a>
         </ul>
     </aside>
-    {% block content %}
-    {% endblock %}
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
 </body>
 </html>
